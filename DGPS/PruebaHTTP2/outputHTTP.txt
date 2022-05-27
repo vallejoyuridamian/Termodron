@@ -1,0 +1,202 @@
+Starting...
+
+START
+AT
+OK
+AT+CPIN=4725
+OK
+AT+CREG?
++CREG: 0,1
+AT+CGSOCKCONT=1,"IP","prepago.ancel"
+OK
+AT+CSOCKAUTH=1,1,"bam","bam"
+OK
+AT+NETCLOSE
++IP ERROR: Network is already closed
+
+ERROR
+
+PB DONE
+AT+NETOPEN="TCP",2101
+Network opened
+
+OK
+0
+
+GET /UYMO HTTP/1.1
+User-Agent: termodron
+Accept: */*
+Connection: close
+Authorization: Basic dGVybW9kcm9uOnRlcm1vZHJvbjE=
+
+
+15212
+http_status: 3
+AT+CHTTPACT="201.217.132.178",2101
++CHTTPACT: REQUEST
+1
+
+GET /UYMO HTTP/1.1
+User-Agent: termodron
+Accept: */*
+Connection: close
+Authorization: Basic dGVybW9kcm9uOnRlcm1vZHJvbjE=
+
+
+
++CHTTPACT:
+DATA,101
+icy 200 ok
+server: gnss spider 5.3.1.6235/1.0
+date: jue, 02 mar 2017 22:55:45 gmt standard time
+
+
++CHTTPACT: DATA,1460
+¦=?¦y"@¦ix¦¦¦¦4¦¦¦¦¦7
+y¦ix?¦O¦5'a~Y#l¦j¦¦¦¦¦¦
+                     N¦¦¦=?¦¦"{K'ix¦¦'¦!1]¦¦y
+                                             ¦?vd¦P¦ix¦¦;W¦¦¦'¦¦!¦¦¦¦¦c!¦=?¦9"BI?ix¦¦¦C
+?¦/W?{Nu¦N¦
+¦¦ix¦x$¦'Z
+          \y¦]y¦¦¦¦
+Ziw0x¦¦¦¦&¦¦uI>    ¦¦w¦=?¦y"BtHiwC)2$H  p0¦C¦¦3w¦#¦
+¦¦ix¦¦?%' ¦¦¦f¦¦¦¦¦¦¦=?¦¦"C¦Kix¦¦¦,K¦D¦¦sn¦¦4o
+¦$¦¦¦B(^¦¦¦¦C!¦=?¦9"}k@ix¦¦2¦h@¦>,¦¦!¦fT=G¦
+¦¦ixA¦¦¦¦¦(U¦¦ ¦e¦¦¦u¦
+¦¦e¦                  ¦V¦=?¦y"Ce¦¦¦¦    .¦¦Ye¦¦š
+@ne¦6¦J¦wM(Z2oStu¦¦¦¦P¦¦=?¦y"B¦Pix¦+(¦¦¦¦YU¦¦¦¦¦-e¦T.
+¦-¦P¦¦+¦;Y¦¦¦¦¦5¦
+¦
+¦¦g¦ }¦¦¦$%¦:¦?¦_1¦¦¦og¦=?¦¦"D*'ixg¦N¦¦[¦¦8¦OY!O¦       ¦¦j¦
+ ~e¦¦¦e¦)?%¦¦;?¦w'¦¦*l¦9R¦=?¦9"|¦e¦<¦\¦¦9¦¦K¦!¦@Rw¦¦
+                      ¦=?¦y"B@>e¦¦¦
+>¦¦:II9¦m¦¦
+¦Qe¦q¦~x¦¦&?¦y#-¦¦^~¦¦
+¦¦b-¦=?¦¦"z¦>ix¦¦
+                 (H>¦E;¦(t$¦¦
+                             ¦¦
+¦ix¦¦}f¦¦¦%¦f¦C¦¦¦¦¦o¦j¦=?¦¦"3ix¦¦¦¦3   ¦3¦
+                                           ¦¦¦¦F¦¦[ix0¦,¦&|¦¦¦=¦¦¦¦¦¦¦¦=?¦9"A¦
+g¦¦¦¦¦T
+ix9¦O¦j¦¦'?¦¦¦g¦¦¦¦¦¦¦¦N¦=?¦y"}g*ix¦¦h¦*¦.t¦uI¦¦3¦'¦
+¦¦¦=?¦¦"z¦Ee¦¦¦E¦y3
+Te¦#¦¦¦K           5v[¦5¦E9r¦
+Tg¦¦¦¦,'¦¦u¦¦=?¦¦"BLg¦5¦p/,¦¦¦I~¦¦
++CHTTPACT: DATA,14
+
+¦¦0¦¦'a¦Q
++CHTTPACT: DATA,1154
+¦=?¦9"{¦zg¦M?z¦¦+H6?¦e
+-¦g¦¦¦¦z¦z¦(MZ5       .¦'u¦
+¦¦e¦¦¦^~¦      ¦¦:¦¦)¦M¦¦=?¦¦"@¦e¦¦¦y9¦x¦j¦     ¦r¦
+¦¦ix¦¦0¦¦¦¦'&¦¦¦¦N¦¦¦2¦=?¦9"B¦Hix¦¦?¦H¦/¦a¦¦¦>mPM¦
+z¦¦-?¦¦?¦¦¦,¦2¦¦¦¦¦¦[¦g¦-?¦Q¦x¦¦z¦¦"q b¦}?:¦¦!c¦
+              ¦>¦>¦¦c¦¦}¦¦9¦X¦?e¦-?¦?¦¦¦A¦¦ "¦&kv¦¦¦¦¦cX¦T"¦¦-?¦x¦"¦"/e "¦?     0b_6¦¦Nc¦
+¦3X¦7;o¦-?¦K¦x¦¦L¦p¦¦
+fr@3X¦¦-?¦?x¦        ¦!$¦*¦0¦¦ g?-¦¦3X¦¦n¦¦-??¦x¦¦¦¦Y] ¦$¦¦òv¦¦¦1¦
+¦¦3X¦¦?¦-?¦?x¦¦y¦|¦¦>¦1Vs9h¦?¦¦-¦G@¦¦¦gi¦¦3X¦¦¦¦¦-?¦¦x¦¦(¦RN¦¦¦¦¦H¦2(¦?CC¦q(¦@¦
+¦:`¦pD¦d¦j¦¦ru¦¦¦6¦.^?"P<¦¦B¦¦¦¦*¦¦¦s¦N¦x¦¦>f"¦
+j!¦¦&}¦
+¦p¦¦¦>¦<¦¦¦B¦fE¦        ¦>¦I¦¦¦
+@       ¦8¦?;¦o¦rX¦1:@         l¦¦¦=~¦¦\>O¦0¦¦3?¦¦?@
+                      ¦¦&W.Q¦¦¦@#¦@y¦¦¦¦¦Aq¦+4¦j%¦¦¦¦j¦¦=B¦!dv@&Z¦¦¦¦
+                                                                     @K¦>¦¦¦I¦'¦@¦.d¦¦¦¦ /¦3¦\¦?>
++CHTTPACT: DATA,310
+¦`)¦¦¦B¦F5¦p>¦¦I¦¦¦#<¦¦C¦       *¦l¦¦¦¦&¦~P¦R¦&@¦>¦<_@Ü?¦
+                   lP5¦¦(¦¦
+@¦      ¦H@¦¦              >O¦0¦¦¦97¦¦?@
+j%¦¦?¦¦       ;¦prX¦(¦¦¦¦ ¦¦.Q¦`¦¦@x¦4¦¦¦¦¦B¦(q¦+4¦
+      j¦LD¦!d¦p&Q¦¦¦¦
+                     @^=:¦¦E'¦@¦-T¦¦D )/¦3¦\@
+¦S¦?
++CHTTPACT: DATA,283
+¦@I¦¦¦B¦^j¦M¦r¦¦¦¦8¦¦^¦l"0$<¦¦B¦¦       +|d¦!¦¦&}P,¦R¦Q ¦       >¦<`G¦
+         !¦!H>¦I¦¦¦
+¦¦#¦@y¦T¦¦¦¦¦B¦Hq¦+5b%¦¦¦¦¦j¦BB¦!e1&`¦¦¦¦
+                                         K¦;¦G¦G¦¦@¦.D3¦¦¦¦I/¦3¦\ ¦D¦13984
+http_status: 4
+AT+CHTTPACT="201.217.132.178",2101
++CME ERROR: HTTP task is busy
+
++CHTTPACT: DATA,283
+¦¦>f¦¦
+!?¦¦b¦4:!¦p>¦I¦¦¦¦6¦#¦¦^¦R#¦¦<¦¦C.¦     ,A$k¦!¦¦&~X¦R¦¦¦9>¦<iGF¦¦¦
+F¦      ¦¦¦¦r;¦ppX?¦¦¦¦¦(¦W¦Q¦¦G#¦@x¦¦`¦¦¦¦DQ¦q¦+5¦ub%¦6¦0rj¦@¦!i¦¦&q¦¦¦¦
+                                                                         K¦+d¦¦V¦¦@¦4¦¦¦"¦¦/¦3¦\¦t¦E0¦
++CHTTPACT: DATA,298
+¦       ?¦?@¦H¦¦¦¦¦>¦¦
+¦!¦¦¦b¦¦>¦L¦>¦¦I¦¦¦¦6¦¦¦¦^¦Y¦"¦¦<¦¦C¦   ,\(g¦¦¦%¦}¦¦R¦¦¦¦=>¦8f¦¦9¦
+                   mq¦  u¦¦¦z>O¦0¦
+Gj      ¦$NC¦$z;¦!ppX¦6 ¦¦      (G?Q¦¦¦G¦¦@wa??{¦DQ¦q¦+5¦}b%¦¦¦¦¦zj¦¦
+                                                                    B¦!j$`&[¦¦¦¦
+                                                                                G¦*¦¦S?¦@¦4¦¦¦¦¦¦/¦3¦] |¦¦&
++CHTTPACT: DATA,310
+¦>¦¦w5¦¦¦"7¦¦s¦N¦x¦¦>f"¦
+¦¦¦>¦¦¦D¦¦¦j¦¦prx ¦¦¦6¦¦.^¦b#¦<¦¦C.!¦   ,wDi¦!¦¦&~
+¦¦¦¦A>¦8¦¦¦B¦¦BA¦¦H>¦I¦¦¦
+G¦      ¦C¦$¦;¦!p!pX?¦   m¦¦¦¦¦¦¦h¦>O¦(¦¦¦¦4¦¦?@
+                       ¦¦       'HW¦Q¦¦ ¦#¦@x¦¦¦¦f¦Cq¦*¦5d¦b%¦¦j¦¦¦!@¦!j¦¦&t ¦¦¦¦
+                                                                                ¦L(¦¦¦TV'¦@¦45¦¦¦¦       /¦3¦\¦¦¦>¦
++CHTTPACT: DATA,283
+¦¦>f'?
+¦)¦¦¦b¦¦F)¦i¦>¦I¦¦¦¦¦6¦m¦^¦k¦#A<¦¦C     ,¦pmH¦¦¦&~¦¦R¦1¦BE>¦8oHÜ¦*¦
+Hd      ¦C¦¦?¦;¦1pA#pX¦"¦¦B¦¦¦>O&H?Q¦¦¦?¦@x¦4`¦¦R E"(q¦+5?j%¦¦[¦¦¦j¦#B¦!j¦`&T"¦¦¦¦
+ ¦¦'G¦¦W¦'¦@¦5e¦¦¦¦)/¦3¦\¦¦¦[.e
++CHTTPACT: DATA,405
+¦"LEIAT504GG      LEI06170003¦*¦¦:@LEIAT504GG      LEI06170003
+                                                              LEICA GR103.031703023<;p¦
+L¦¦¦¦¦¦¦¦¦¦>f7b¦
+¦I¦¦¦b¦¦JI¦¦¦>¦¦I¦¦¦¦¦V^¦w#9$<¦¦C       ,¦¦m¦!¦¦&~¦,¦R¦iI>¦4h¦G?¦
+H¦?@    ¦S|¦¦;¦1pG%pX¦?"$¦¦B¦¦¦>,¦W¦Q¦¦h¦#¦@x¦T¦¦¦=JERHq¦+5?j%¦¦/¦¦j¦¦¦%@¦!kU¦&h$¦¦¦¦
+    IK¦%¦¦V?¦@¦5E3¦v¦I/¦3¦\?¦¦
++CHTTPACT: DATA,283
+¦¦>fG¦
+¦"i¦¦¦b¦¦N=¦¦¦>¦I¦¦¦¦^¦¦"¦4<¦¦C'¦       ,¦ oI¦¦¦&~¦<¦R¦¦ .M>¦8m¦¦¦3
+'B¦!k¦¦&i&¦¦¦¦;¦1pG'nX¦\p&¦¦¦¦¦>(¦?Q¦¦,?¦@xt`¦¦(vErhq¦+5?b%¦¦?¦j¦
+              ¦^$¦¦¦YV¦¦@¦63¦S¦i/¦3¦\¦¦`N¦
++CHTTPACT: DATA,298
+¦       ?¦?CHz¦¦¦>fV¦¦
+?¦¦¦b¦¦RA¦¦0>¦¦I¦¦¦¦¦6¦¦.^¦¦¦#¦D<¦¦C')¦ ,¦f¦!¦¦&}¦L¦R¦¦¦JQ>¦8qJC?¦
+I¦      ¦r¦C¦H¦;¦!p&)pX¦¦P(¦¦>O¦)¦W¦Q¦¦J#¦@v¦¦¦¦¦¦Eb¦q¦+5?b%¦¦?¦¦j¦)@¦!l#¦&_(¦¦¦¦
+                                                                                ¦K#*¦¦\'¦@¦6¦S¦0z¦/¦3¦\¦¦¦¦
++CHTTPACT: DATA,310
+¦>¦¦w5¦¦¦"7¦¦s¦N¦x¦¦>ffB¦
+¦?¦¦b¦¦VA¦¦¦>¦¦I¦¦¦¦¦6¦m¦^¦¦#¦T<¦¦C++¦  -0f¦¦¦¦&}¦\¦R¦@VU>¦8sJu¦
+JX      ¦¦¦C¦D¦;¦!p&+pXp`*¦¦>O¦(*J?Q¦¦¦¦?@
+                                       J¦¦@u¦¦`¦¦¦¦DR¦q¦+5¦¦j%¦j¦¦¦¦j¦+@¦!l¦¦&_*¦¦¦¦
+y¦/P3¦\?¦'¦¦@¦55S¦
++CHTTPACT: DATA,283
+¦¦>fu¦
+¦b?¦¦b¦¦Z9¦¦6H>¦I¦¦¦¦U^¦¦¦#¦d<¦¦C%-¦    -fK!¦¦%¦}¦l¦R¦M¦ Y>¦4l¦F¦?
+J¦      ¦¦g¦¦@¦;¦!p%-nX¦v¦!,¦¦(¦,¦W¦Q¦¦¦
+
+#¦@u¦¦`¦¦¦Er¦q¦+5?j%¦M¦?¦¦j¦-B¦!l¦`&n,¦¦¦¦
+                                          ¦K¦ l¦¦_¦¦¦@¦7¦s¦¦¦/¦3¦\¦¦¦1t¦
++CHTTPACT: DATA,405
+¦"LEIAT504GG      LEI06170003¦*¦¦:@LEIAT504GG      LEI06170003
+                                                              LEICA GR103.031703023<;p¦
+L¦¦¦¦¦¦¦¦¦¦>f¦¦¦
+¦-A?¦D¦p¦¦k
+           ¦r¦.¦¦¦6¦E¦^¦c#t<¦¦C/¦       -7¦f
+                                            ¦¦¦%¦}¦|¦R¦¦¦0]>¦8o
+¦¦?¦b¦v^1¦¦¦>¦I¦¦¦                                            u¦¦¦
+KR      ¦¦"¦?¦;¦1p</nX¦n¦¦(.¦¦¦(.¦?Q¦¦¦¦¦¦@wR??¦8C¦¦q¦*¦5h¦j%¦0g¦¦\¦j¦¦¦/@¦!m]P&o.¦¦¦¦
+
+¦¦e¦¦@¦9Us¦a¦/¦3¦\¦¦¦-]0
+
+GET /UYMO HTTP/1.1
+User-Agent: termodron
+Accept: */*
+Connection: close
+Authorization: Basic dGVybW9kcm9uOnRlcm1vZHJvbjE=
+
+
+
++CHTTPACT:
+DATA,283
+¦¦>f¦"¦
+¦¦XA¦¦D¦¦¦¦bQ¦¦V>¦I¦¦¦.^¦¦#Y¦<¦¦C"1¦    -S|eL!¦¦%¦}¦¦¦R¦¦`>a>¦4q¦G¦we
+K¦      ¦¦¦C¦¦¦;¦1pQ1pX¦fP.0¦¦>G0¦W¦QL#¦@wS¦¦¦¦lFq¦+6¦b%¦¦¦j¦¦¦1@¦!m¦¦&Z0¦¦¦¦
+                                                                             LK¦¦¦¦aX'¦@¦8¦¦¦¦¦
+        /¦3¦\¦¦¦WT¦11708
+http_status: 4

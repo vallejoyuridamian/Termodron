@@ -1,0 +1,79 @@
+Imagen
+
+***Bitmap file header***
+HeaderField (2 bytes)
+0x42  (B)
+0x4D  (M)
+Bytecounter = 2
+
+File size in bytes (4 bytes little endian)
+0xSize_LSB
+0xSize_LSB+1
+0xSize_LSB+2
+0xSize_LSB+3
+Bytecounter = 6
+
+Reservados (4 bytes, pueden ser todos 0)
+0x00
+0x00
+0x00
+0x00
+
+Bytecounter = 10
+
+Offset (byte donde empiezan los datos de la imagen, se empieza a contar en 0) (4 bytes)
+0xOffset_LSB
+0xOffset_LSB+1
+0xOffset_LSB+2
+0xOffset_LSB+3
+
+Bytecounter = 14
+
+***Fin Bitmap file header***
+
+***DIB Header***
+
+Cantidad de bytes en el DIB Header (4 bytes)
+
+0xDIB_Header_LSB
+0xDIB_Header_LSB+1
+0xDIB_Header_LSB+2
+0xDIB_Header_LSB+3
+Bytecounter = 18
+
+Cuenta horizontal de pixels (4 bytes) (En nuestro caso sería 80)
+
+Bytecounter = 22
+0xPixel_width_LSB
+0xPixel_width_LSB+1
+0xPixel_width_LSB+2
+0xPixel_width_LSB+3
+
+Cuenta vertical de pixels (4 bytes) (En nuestro caso sería 60)
+0xPixel_height_LSB
+0xPixel_height_LSB+1
+0xPixel_height_LSB+2
+0xPixel_height_LSB+3
+
+Bytecounter = 26
+
+
+Cantidad de planos de color (?) (2 bytes)
+
+0x01
+0x00
+
+Bytecounter = 28
+
+Cantidad de bits por pixel (2 bytes, 24)
+
+0x18
+0x00
+
+Bytecounter = 28
+
+
+
+
+***FIN DIB Header***
+

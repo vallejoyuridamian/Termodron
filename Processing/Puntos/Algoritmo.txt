@@ -1,0 +1,62 @@
+i va creciendo desde 2
+k va decreciendo de N
+
+voy del 1 al 2, esto fija la dirección m
+
+while ( i < k){
+
+voy del i al i+1 una distancia d (o voy al i+1 si la distancia entre i y i+1 es menor a d, en este caso recalculo m)
+
+voy del punto actual a un punto en la recta (k+1)(k) (1N la primera vez) y con dirección paralela a 1 2 (o voy a k si el punto está más lejos de k+1 que k, en este caso recalculo m)
+
+si no fui al punto k
+  voy del punto acutal al k una distancia d (o voy al 3 si la distancia entre 2 y 3 es menor a d)
+  
+}
+
+/////////////ir del punto A al B una distancia d o ir al B si queda más cerca /////////////
+
+Punto irDeAHastaB(A, B: Punto; d:float){
+
+A = (xa,ya)
+B = (xb,yb)
+
+dAB = sqrt((x2-x3)^2+(y2-y3)^2)
+
+cualquier punto que esté en la recta que pasa
+entre a y b pasa por  y = mx+b
+
+float calcularPendiente(A, B: Punto){
+
+}
+
+m = (y2-y3)/(x2-x3)  //(si x2 != x3) se calcula
+
+b = y - m*x = y2 - (y2-y3)/(x2-x3)*x2 se calcula
+
+d^2 = (x2-x3)^2+(y2-y3)^2
+
+entonces tengo que calcular (x4,y4) tal que
+
+y4 = m*x4+b
+
+d^2 = (x4-x2)^2+(y4-y2)^2
+
+entonces
+
+d^2 = (x4-x2)^2+(m*x4+b-y2)^2
+
+d^2 = x4^2-2*x4*x2+x2^2+m^2*x4^2+2*m*x4*b+b^2-2*m*x4*y2-2*b*y2+y2^2
+
+entonces
+
+(1+m^2)x4^2+(-2*x2+2m*b-2*m*y2)x4+(b^2-d^2+x2^2-2*b*y2+y2^2) = 0
+
+entonces 
+
+x4 = -b ±... <-- hay que elegir el que quede entre x2 y x3 
+y4 = m*4x+b
+
+///// conseguir la dirección entre dos puntos (x1,y1) y (x2,y2) ///////
+
+m = (y2-y3)/(x2-x3)  //(si x2 != x3) se calcula, si x2=x3 la direccion es vertical
