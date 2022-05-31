@@ -1,4 +1,4 @@
-# Termodron 
+# Termodron 🚁🌡️
 
 Termodron was my final degree project for my Electrical Engineer degree. I did it with my colleagues Ignacio Reyes and Agustin Barriola.
 
